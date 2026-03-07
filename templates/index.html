@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
 
+<html>
 <head>
+
 <title>Strategic Product Placement Analysis</title>
 
 <style>
@@ -15,64 +16,144 @@ h1{
 color:#333;
 }
 
-.dashboard{
+.nav{
+margin-top:20px;
+}
+
+button{
+padding:10px 20px;
+margin:10px;
+font-size:16px;
+cursor:pointer;
+background:#2c7be5;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+button:hover{
+background:#1a5fd0;
+}
+
+.container{
+width:95%;
 margin:auto;
-width:90%;
+margin-top:20px;
 }
 </style>
+
+<script>
+
+function showDashboard(){
+document.getElementById("dashboard").style.display="block";
+document.getElementById("story").style.display="none";
+}
+
+function showStory(){
+document.getElementById("dashboard").style.display="none";
+document.getElementById("story").style.display="block";
+}
+
+</script>
 
 </head>
 
 <body>
 
 <h1>Strategic Product Placement Analysis</h1>
-<h2>Retail Sales Insights Dashboard</h2>
+<h2>Retail Sales Insights</h2>
 
-<div class="dashboard">
+<div class="nav">
+<button onclick="showDashboard()">Dashboard</button>
+<button onclick="showStory()">Story</button>
+</div>
 
-<div class='tableauPlaceholder' id='viz1772914385138' style='position: relative'>
+<div class="container">
+
+<!-- DASHBOARD -->
+
+<div id="dashboard">
+
+<div class='tableauPlaceholder' id='viz1772916876130' style='position: relative'>
+
 <noscript>
 <a href='#'>
-<img alt='Dashboard 1'
-src='https://public.tableau.com/static/images/G8/G8776RZP8/1_rss.png'
-style='border: none' />
+<img alt='Dashboard'
+src='https://public.tableau.com/static/images/St/StrategicProductPlacementAnalysis_17729092472330/Dashboard1/1_rss.png'
+style='border: none'/>
 </a>
 </noscript>
 
 <object class='tableauViz' style='display:none;'>
 
-<param name='host_url' value='https://public.tableau.com/' />
-<param name='embed_code_version' value='3' />
-<param name='path' value='shared/G8776RZP8' />
+<param name='host_url' value='https://public.tableau.com/'/>
+<param name='embed_code_version' value='3'/>
+<param name='path' value='views/StrategicProductPlacementAnalysis_17729092472330/Dashboard1'/>
 <param name='toolbar' value='yes'/>
-<param name='static_image'
-value='https://public.tableau.com/static/images/G8/G8776RZP8/1.png' />
-
-<param name='animate_transition' value='yes'/>
-<param name='display_static_image' value='yes'/>
-<param name='display_spinner' value='yes'/>
-<param name='display_overlay' value='yes'/>
-<param name='display_count' value='yes'/>
-<param name='language' value='en-US'/>
-<param name='filter' value='publish=yes'/>
 
 </object>
 </div>
 
 <script type='text/javascript'>
 
-var divElement = document.getElementById('viz1772914385138');
+var divElement = document.getElementById('viz1772916876130');
 var vizElement = divElement.getElementsByTagName('object')[0];
 
-vizElement.style.width='1300px';
+vizElement.style.width='100%';
 vizElement.style.height='900px';
 
 var scriptElement = document.createElement('script');
-scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+scriptElement.src='https://public.tableau.com/javascripts/api/viz_v1.js';
 
-vizElement.parentNode.insertBefore(scriptElement, vizElement);
+vizElement.parentNode.insertBefore(scriptElement,vizElement);
 
 </script>
+
+</div>
+
+<!-- STORY -->
+
+<div id="story" style="display:none;">
+
+<div class='tableauPlaceholder' id='viz1772916937096' style='position: relative'>
+
+<noscript>
+<a href='#'>
+<img alt='Story'
+src='https://public.tableau.com/static/images/St/StrategicProductPlacementAnalysis_17729092472330/StrategicProductPlacementAnalysisRetailSalesInsightsfromRetailDataset/1_rss.png'
+style='border: none'/>
+</a>
+</noscript>
+
+<object class='tableauViz' style='display:none;'>
+
+<param name='host_url' value='https://public.tableau.com/'/>
+<param name='embed_code_version' value='3'/>
+
+<param name='path'
+value='views/StrategicProductPlacementAnalysis_17729092472330/StrategicProductPlacementAnalysisRetailSalesInsightsfromRetailDataset'/>
+
+<param name='toolbar' value='yes'/>
+
+</object>
+</div>
+
+<script type='text/javascript'>
+
+var divElement2=document.getElementById('viz1772916937096');
+var vizElement2=divElement2.getElementsByTagName('object')[0];
+
+vizElement2.style.width='100%';
+vizElement2.style.height='900px';
+
+var scriptElement2=document.createElement('script');
+scriptElement2.src='https://public.tableau.com/javascripts/api/viz_v1.js';
+
+vizElement2.parentNode.insertBefore(scriptElement2,vizElement2);
+
+</script>
+
+</div>
 
 </div>
 
