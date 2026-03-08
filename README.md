@@ -100,16 +100,21 @@ The Flask UI includes:
 strategic-product-placement-analysis
 │
 ├── app.py
-├── README.md
+│
+├── dataset
+│   └── Product Positioning.csv
+│
+├── screenshots
+│   └── dashboard.png
+│
+├── static
+│   └── style.css
 │
 ├── templates
 │   └── index.html
 │
-├── dataset
-│   └── retail_sales_dataset.csv
-│
-└── screenshots
-    └── dashboard.png
+├── README.md
+└── requirements.txt
 ```
 
 ---
