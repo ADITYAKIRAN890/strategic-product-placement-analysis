@@ -23,22 +23,22 @@ By visualizing this data, businesses can improve product placement strategies an
 
 ## Dataset
 
-The dataset used for this project is a **Retail Sales Dataset** obtained from Kaggle.
+The dataset used for this project is a **Impact of Product Positioning on Sales** obtained from Kaggle.
 
 Dataset link:
 https://www.kaggle.com/datasets/amitvkulkarni/impact-of-product-positioning-on-sales
 
 Key columns in the dataset include:
 
-* Transaction ID
-* Date
-* Customer ID
-* Gender
-* Age
 * Product Category
-* Quantity
-* Price per Unit
-* Total Amount
+* Product Position
+* Sales Volume
+* Foot Traffic
+* Price
+* Competitor Price
+* Consumer Demographics
+* Seasonal
+* Sales Volume
 
 ---
 
