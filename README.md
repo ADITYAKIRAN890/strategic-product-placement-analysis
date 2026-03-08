@@ -58,11 +58,13 @@ The following tools were used in this project:
 
 Several visualizations were created to analyze retail sales data, including:
 
-* Sales by Product Category
-* Sales by Gender
-* Sales Trend Over Time
-* Quantity Sold by Category
-* Age vs Spending Analysis
+* Average Sales Volume vs Product Category
+* Consumer Demographics vs Sales Volume
+* Foot Traffic vs Average Sales Volume
+* Product Category vs Product Position
+* Promotion vs Sales Volume
+* Competitor Price vs Product Price
+* Product Category vs Price Distribution
 
 These visualizations were combined into a **Tableau Dashboard** and further explained through a **Tableau Story**.
 
