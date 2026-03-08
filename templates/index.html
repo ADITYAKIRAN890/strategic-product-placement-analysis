@@ -1,102 +1,310 @@
 <!DOCTYPE html>
 
-<html>
-<head>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
 <title>Strategic Product Placement Analysis</title>
 
 <style>
+
 body{
-font-family: Arial;
-background:#f4f4f4;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#000;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#000;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+margin:0 20px;
+text-decoration:none;
+color:white;
+font-size:16px;
+}
+
+.btn{
+border:2px solid gold;
+padding:8px 18px;
+background:transparent;
+color:white;
+cursor:pointer;
+}
+
+/* HERO SECTION WITH DARK OVERLAY */
+
+.hero{
+height:90vh;
+background-image:
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+url("https://images.unsplash.com/photo-1542838132-92c53300491e");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
 }
 
-h1{
-color:#333;
+.hero h1{
+font-size:64px;
+color:white;
+text-shadow:0px 4px 20px rgba(0,0,0,0.8);
+margin:0;
 }
 
-.nav{
-margin-top:20px;
+.hero p{
+font-size:22px;
+color:#ddd;
+margin-top:10px;
+}
+
+section{
+padding:100px 80px;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+}
+
+.about{
+display:flex;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:450px;
+border-radius:10px;
+}
+
+.dashboard-container{
+max-width:1400px;
+margin:auto;
+background:#111;
+padding:30px;
+border-radius:10px;
+}
+
+.contact-container{
+display:flex;
+gap:40px;
+}
+
+.contact-info{
+width:30%;
+}
+
+form{
+width:70%;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:4px;
+}
+
+textarea{
+height:120px;
 }
 
 button{
-padding:10px 20px;
-margin:10px;
-font-size:16px;
-cursor:pointer;
-background:#2c7be5;
-color:white;
+background:gold;
 border:none;
-border-radius:5px;
+padding:12px 25px;
+cursor:pointer;
 }
 
-button:hover{
-background:#1a5fd0;
+html{
+scroll-behavior:smooth;
 }
 
-.container{
-width:95%;
-margin:auto;
-margin-top:20px;
-}
 </style>
-
-<script>
-
-function showDashboard(){
-document.getElementById("dashboard").style.display="block";
-document.getElementById("story").style.display="none";
-}
-
-function showStory(){
-document.getElementById("dashboard").style.display="none";
-document.getElementById("story").style.display="block";
-}
-
-</script>
 
 </head>
 
 <body>
 
-<h1>Strategic Product Placement Analysis</h1>
-<h2>Retail Sales Insights</h2>
+<header>
 
-<div class="nav">
-<button onclick="showDashboard()">Dashboard</button>
-<button onclick="showStory()">Story</button>
+<div class="logo">SALES</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#story">Story</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button class="btn">Get Started</button>
+
+</header>
+
+<!-- HOME -->
+
+<section id="home" class="hero">
+
+<div>
+
+<h1>Strategic Product Placement Analysis</h1>
+<p>We are team of talented Data Analytics</p>
+
 </div>
 
-<div class="container">
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">The Project Involves</h2>
+
+<div class="about">
+
+<div>
+
+<p>Data collection is the process of gathering and measuring information on variables of interest in an established systematic fashion.</p>
+
+<p>Data preparation involves cleaning, transforming, and organizing data to make it suitable for analysis.</p>
+
+<p>Data visualization helps convert complex data into charts and graphs to reveal insights and patterns.</p>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a">
+
+</div>
+
+</section>
 
 <!-- DASHBOARD -->
 
-<div id="dashboard">
+<section id="dashboard">
 
-<div class='tableauPlaceholder' id='viz1772916876130' style='position: relative'>
+<h2 class="section-title">Product Placement Analysis Dashboard</h2>
+
+<div class="dashboard-container">
+
+<div class='tableauPlaceholder' id='vizDashboard' style='position: relative'>
 
 <noscript>
 <a href='#'>
 <img alt='Dashboard'
 src='https://public.tableau.com/static/images/St/StrategicProductPlacementAnalysis_17729092472330/Dashboard1/1_rss.png'
-style='border: none'/>
+style='border:none' />
 </a>
 </noscript>
 
 <object class='tableauViz' style='display:none;'>
 
-<param name='host_url' value='https://public.tableau.com/'/>
-<param name='embed_code_version' value='3'/>
-<param name='path' value='views/StrategicProductPlacementAnalysis_17729092472330/Dashboard1'/>
-<param name='toolbar' value='yes'/>
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='embed_code_version' value='3' />
+<param name='path' value='views/StrategicProductPlacementAnalysis_17729092472330/Dashboard1' />
+<param name='toolbar' value='yes' />
 
 </object>
+
 </div>
 
-<script type='text/javascript'>
+</div>
 
-var divElement = document.getElementById('viz1772916876130');
+</section>
+
+<!-- STORY -->
+
+<section id="story">
+
+<h2 class="section-title">Product Placement Analysis Story</h2>
+
+<div class="dashboard-container">
+
+<div class='tableauPlaceholder' id='vizStory' style='position: relative'>
+
+<noscript>
+<a href='#'>
+<img alt='Story'
+src='https://public.tableau.com/static/images/St/StrategicProductPlacementAnalysis_17729092472330/Story1/1_rss.png'
+style='border:none' />
+</a>
+</noscript>
+
+<object class='tableauViz' style='display:none;'>
+
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='embed_code_version' value='3' />
+<param name='site_root' value='' />
+<param name='name' value='StrategicProductPlacementAnalysis_17729092472330/Story1' />
+<param name='tabs' value='yes' />
+<param name='toolbar' value='yes' />
+
+</object>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<p><b>Location:</b><br> Delhi-NCR, India</p>
+
+<p><b>Email:</b><br> Yourstore@gmail.com</p>
+
+<p><b>Call:</b><br> 88889 88889</p>
+
+</div>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<input type="text" placeholder="Subject">
+
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<script>
+
+var divElement = document.getElementById('vizDashboard');
 var vizElement = divElement.getElementsByTagName('object')[0];
 
 vizElement.style.width='100%';
@@ -109,53 +317,20 @@ vizElement.parentNode.insertBefore(scriptElement,vizElement);
 
 </script>
 
-</div>
+<script>
 
-<!-- STORY -->
+var divElementStory = document.getElementById('vizStory');
+var vizElementStory = divElementStory.getElementsByTagName('object')[0];
 
-<div id="story" style="display:none;">
+vizElementStory.style.width='100%';
+vizElementStory.style.height='1100px';
 
-<div class='tableauPlaceholder' id='viz1772916937096' style='position: relative'>
+var scriptElementStory = document.createElement('script');
+scriptElementStory.src='https://public.tableau.com/javascripts/api/viz_v1.js';
 
-<noscript>
-<a href='#'>
-<img alt='Story'
-src='https://public.tableau.com/static/images/St/StrategicProductPlacementAnalysis_17729092472330/StrategicProductPlacementAnalysisRetailSalesInsightsfromRetailDataset/1_rss.png'
-style='border: none'/>
-</a>
-</noscript>
-
-<object class='tableauViz' style='display:none;'>
-
-<param name='host_url' value='https://public.tableau.com/'/>
-<param name='embed_code_version' value='3'/>
-
-<param name='path'
-value='views/StrategicProductPlacementAnalysis_17729092472330/StrategicProductPlacementAnalysisRetailSalesInsightsfromRetailDataset'/>
-
-<param name='toolbar' value='yes'/>
-
-</object>
-</div>
-
-<script type='text/javascript'>
-
-var divElement2=document.getElementById('viz1772916937096');
-var vizElement2=divElement2.getElementsByTagName('object')[0];
-
-vizElement2.style.width='100%';
-vizElement2.style.height='900px';
-
-var scriptElement2=document.createElement('script');
-scriptElement2.src='https://public.tableau.com/javascripts/api/viz_v1.js';
-
-vizElement2.parentNode.insertBefore(scriptElement2,vizElement2);
+vizElementStory.parentNode.insertBefore(scriptElementStory,vizElementStory);
 
 </script>
-
-</div>
-
-</div>
 
 </body>
 </html>

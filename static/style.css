@@ -1,0 +1,197 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#000;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+margin:0 20px;
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+.btn{
+border:2px solid gold;
+padding:8px 18px;
+background:transparent;
+color:white;
+cursor:pointer;
+border-radius:4px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:gold;
+color:black;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:90vh;
+background-image:
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+url("https://images.unsplash.com/photo-1542838132-92c53300491e");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:64px;
+color:white;
+text-shadow:0px 4px 20px rgba(0,0,0,0.8);
+}
+
+.hero p{
+font-size:22px;
+color:#ddd;
+margin-top:10px;
+}
+
+/* GENERAL SECTION */
+
+section{
+padding:100px 80px;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+}
+
+/* ABOUT */
+
+.about{
+display:flex;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:450px;
+border-radius:10px;
+}
+
+/* DASHBOARD + STORY */
+
+.dashboard-container{
+max-width:1400px;
+margin:auto;
+background:#111;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 0px 20px rgba(0,0,0,0.6);
+}
+
+/* CONTACT */
+
+.contact-container{
+display:flex;
+gap:40px;
+}
+
+.contact-info{
+width:30%;
+background:#111;
+padding:20px;
+border-radius:8px;
+}
+
+form{
+width:70%;
+background:#111;
+padding:20px;
+border-radius:8px;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:4px;
+font-size:15px;
+}
+
+textarea{
+height:120px;
+}
+
+button{
+background:gold;
+border:none;
+padding:12px 25px;
+cursor:pointer;
+border-radius:5px;
+font-weight:bold;
+}
+
+button:hover{
+background:#f5c518;
+}
+
+/* SMOOTH SCROLL */
+
+html{
+scroll-behavior:smooth;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.about{
+flex-direction:column;
+}
+
+.contact-container{
+flex-direction:column;
+}
+
+.contact-info,
+form{
+width:100%;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}

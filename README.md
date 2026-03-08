@@ -26,7 +26,7 @@ By visualizing this data, businesses can improve product placement strategies an
 The dataset used for this project is a **Retail Sales Dataset** obtained from Kaggle.
 
 Dataset link:
-https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset
+https://www.kaggle.com/datasets/amitvkulkarni/impact-of-product-positioning-on-sales
 
 Key columns in the dataset include:
 
@@ -168,6 +168,7 @@ This project demonstrates how **data visualization and web integration** can be 
 ## Author
 
 Aditya Kiran Shukla
+
 Yukta Arora
 
 GitHub:
